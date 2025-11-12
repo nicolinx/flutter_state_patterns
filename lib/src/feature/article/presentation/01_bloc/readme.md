@@ -1,14 +1,24 @@
 # 🧱 BLoC Example
 
-This folder demonstrates the **BLoC (Business Logic Component)** pattern using the `flutter_bloc` package.
+This folder demonstrates the **BLoC (Business Logic Component)** pattern using the [`flutter_bloc`](https://pub.dev/packages/flutter_bloc) package.
 
 ---
 
 ## 🧠 Overview
 
-- Uses **Events** and **States** to manage UI updates.
-- Great for **scalable**, **testable**, and **predictable** architectures.
-- Ideal when you need **clear separation** between UI and business logic.
+- Uses **Events** and **States** to manage reactive UI updates.
+- Promotes **separation of concerns** between UI and business logic.
+- Scales well for **complex, testable**, and **predictable** applications.
+
+---
+
+## 🚀 Key Concepts
+
+| Concept   | Description                                                          |
+| :-------- | :------------------------------------------------------------------- |
+| **Event** | Describes what should happen (e.g., `fetch`, `refresh`, `loadMore`). |
+| **State** | Represents the UI’s condition at any given moment.                   |
+| **Bloc**  | Reacts to events, performs logic, and emits new states.              |
 
 ---
 
@@ -18,10 +28,28 @@ This folder demonstrates the **BLoC (Business Logic Component)** pattern using t
 context.read<ArticleListBloc>().add(const ArticleListEvent.fetch());
 ```
 
+or
+
+```dart
+context.read<ArticleDetailBloc>().add(ArticleDetailEvent.fetchArticleById(widget.articleId));
+```
+
 ---
 
-## 🚀 Key Concepts
+## 📁 Structure
 
-- Event: describes what should happen (e.g., fetch, refresh, loadMore).
-- State: represents the UI’s condition at any moment.
-- Bloc: reacts to events, performs logic, and emits new states.
+presentation/01_bloc
+┣ bloc
+┃ ┣ article_detail
+┃ ┃ ┣ article_detail_bloc.dart
+┃ ┃ ┣ article_detail_event.dart
+┃ ┃ ┗ article_detail_state.dart
+┃ ┗ article_list
+┃ ┃ ┣ article_list_bloc.dart
+┃ ┃ ┣ article_list_event.dart
+┃ ┃ ┗ article_list_state.dart
+┣ page
+┃ ┣ article_detail_page.dart
+┃ ┗ article_list_page.dart
+
+---

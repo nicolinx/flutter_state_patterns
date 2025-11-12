@@ -5,14 +5,17 @@ A Flutter boilerplate demonstrating **all common state management approaches**:
 
 ## 📁 State Management Implementations
 
-| Folder                                                            | Approach     | Description                                           |
-| :---------------------------------------------------------------- | :----------- | :---------------------------------------------------- |
-| [`01_bloc`](lib/src/feature/article/presentation/01_bloc)         | **BLoC**     | Business Logic Component pattern using `flutter_bloc` |
-| [`02_provider`](lib/src/feature/article/presentation/02_provider) | **Provider** | Simple and lightweight state management               |
-| [`03_riverpod`](lib/src/feature/article/presentation/03_riverpod) | **Riverpod** | Modern, type-safe, and testable approach              |
-| [`04_getx`](lib/src/feature/article/presentation/04_getx)         | **GetX**     | Reactive and minimal boilerplate pattern              |
-| [`05_mobx`](lib/src/feature/article/presentation/05_mobx)         | **MobX**     | State management using observables and reactions      |
-| [`00_setstate`](lib/src/feature/article/presentation/00_setstate) | **setState** | Basic Flutter built-in state management               |
+| Folder                                                                       | Approach          | Description                                           |
+| :--------------------------------------------------------------------------- | :---------------- | :---------------------------------------------------- |
+| [`01_setstate`](/lib/src/feature/article/presentation/01_setstate)           | **setState**      | Basic Flutter built-in state management               |
+| [`02_provider`](/lib/src/feature/article/presentation/02_provider)           | **Provider**      | Simple and lightweight state management               |
+| [`03_bloc`](/lib/src/feature/article/presentation/03_bloc)                   | **BLoC**          | Business Logic Component pattern using `flutter_bloc` |
+| [`04_cubit`](/lib/src/feature/article/presentation/04_cubit)                 | **Cubit**         | Simplified version of BLoC with minimal boilerplate   |
+| [`05_riverpod`](/lib/src/feature/article/presentation/05_riverpod)           | **Riverpod**      | Modern, type-safe, and testable approach              |
+| [`06_getx`](/lib/src/feature/article/presentation/06_getx)                   | **GetX**          | Reactive and minimal boilerplate pattern              |
+| [`07_mobx`](/lib/src/feature/article/presentation/07_mobx)                   | **MobX**          | State management using observables and reactions      |
+| [`08_redux`](/lib/src/feature/article/presentation/08_redux)                 | **Redux**         | Predictable state container using actions & reducers  |
+| [`09_valuenotifier`](/lib/src/feature/article/presentation/09_valuenotifier) | **ValueNotifier** | Lightweight built-in reactive state approach          |
 
 > 💡 Each folder includes its own `README.md` explaining setup, usage, and example pages.
 
