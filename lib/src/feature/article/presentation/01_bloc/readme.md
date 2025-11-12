@@ -38,19 +38,20 @@ context.read<ArticleDetailBloc>().add(ArticleDetailEvent.fetchArticleById(widget
 
 ## 📁 Structure
 
-- [presentation/01_bloc/](./presentation/01_bloc)
-  - [bloc/](./presentation/01_bloc/bloc)
-    - [article_detail/](./presentation/01_bloc/bloc/article_detail)
-      - [article_detail_bloc.dart](./presentation/01_bloc/bloc/article_detail/article_detail_bloc.dart)
-      - [article_detail_event.dart](./presentation/01_bloc/bloc/article_detail/article_detail_event.dart)
-      - [article_detail_state.dart](./presentation/01_bloc/bloc/article_detail/article_detail_state.dart)
-    - [article_list/](./presentation/01_bloc/bloc/article_list)
-      - [article_list_bloc.dart](./presentation/01_bloc/bloc/article_list/article_list_bloc.dart)
-      - [article_list_event.dart](./presentation/01_bloc/bloc/article_list/article_list_event.dart)
-      - [article_list_state.dart](./presentation/01_bloc/bloc/article_list/article_list_state.dart)
-  - [page/](./presentation/01_bloc/page)
-    - [article_detail_page.dart](./presentation/01_bloc/page/article_detail_page.dart)
-    - [article_list_page.dart](./presentation/01_bloc/page/article_list_page.dart)
-  - [readme.md](./presentation/01_bloc/readme.md)
+# 01_bloc
+
+- [bloc/](./01_bloc/bloc)
+  - [article_detail/](./01_bloc/bloc/article_detail)
+    - [article_detail_bloc.dart](./01_bloc/bloc/article_detail/article_detail_bloc.dart)
+    - [article_detail_event.dart](./01_bloc/bloc/article_detail/article_detail_event.dart)
+    - [article_detail_state.dart](./01_bloc/bloc/article_detail/article_detail_state.dart)
+  - [article_list/](./01_bloc/bloc/article_list)
+    - [article_list_bloc.dart](./01_bloc/bloc/article_list/article_list_bloc.dart)
+    - [article_list_event.dart](./01_bloc/bloc/article_list/article_list_event.dart)
+    - [article_list_state.dart](./01_bloc/bloc/article_list/article_list_state.dart)
+- [page/](./01_bloc/page)
+  - [article_detail_page.dart](./01_bloc/page/article_detail_page.dart)
+  - [article_list_page.dart](./01_bloc/page/article_list_page.dart)
+- [readme.md](./01_bloc/readme.md)
 
 ---
