@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/01_bloc/bloc/article_list/article_list_bloc.dart';
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/01_bloc/bloc/article_list/article_list_event.dart';
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/01_bloc/bloc/article_list/article_list_state.dart';
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/01_bloc/page/article_detail_page.dart';
+import 'package:go_router/go_router.dart';
 
 class ArticleListPage extends StatefulWidget {
   static const String routeName = '/article-list';
@@ -51,6 +53,12 @@ class _ArticleListPageState extends State<ArticleListPage> {
               itemBuilder: (context, index) {
                 if (index < state.articles.length) {
                   return ListTile(
+                    onTap: () => context.pushNamed(
+                      ArticleDetailPage.routeName,
+                      pathParameters: {
+                        'id': state.articles[index].id.toString(),
+                      },
+                    ),
                     title: Text(state.articles[index].title ?? '-'),
                   );
                 } else {
