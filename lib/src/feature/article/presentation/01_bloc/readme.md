@@ -38,20 +38,22 @@ context.read<ArticleDetailBloc>().add(ArticleDetailEvent.fetchArticleById(widget
 
 ## 📁 Structure
 
-# 01_bloc
-
-- [bloc/](./01_bloc/bloc)
-  - [article_detail/](./01_bloc/bloc/article_detail)
-    - [article_detail_bloc.dart](./01_bloc/bloc/article_detail/article_detail_bloc.dart)
-    - [article_detail_event.dart](./01_bloc/bloc/article_detail/article_detail_event.dart)
-    - [article_detail_state.dart](./01_bloc/bloc/article_detail/article_detail_state.dart)
-  - [article_list/](./01_bloc/bloc/article_list)
-    - [article_list_bloc.dart](./01_bloc/bloc/article_list/article_list_bloc.dart)
-    - [article_list_event.dart](./01_bloc/bloc/article_list/article_list_event.dart)
-    - [article_list_state.dart](./01_bloc/bloc/article_list/article_list_state.dart)
-- [page/](./01_bloc/page)
-  - [article_detail_page.dart](./01_bloc/page/article_detail_page.dart)
-  - [article_list_page.dart](./01_bloc/page/article_list_page.dart)
-- [readme.md](./01_bloc/readme.md)
+presentation/01_bloc/
+├─ bloc/
+│ ├─ article_detail/
+│ │ ├─ article_detail_bloc.dart
+│ │ ├─ article_detail_event.dart
+│ │ ├─ article_detail_event.freezed.dart
+│ │ ├─ article_detail_state.dart
+│ │ └─ article_detail_state.freezed.dart
+│ └─ article_list/
+│ │ ├─ article_list_bloc.dart
+│ │ ├─ article_list_event.dart
+│ │ ├─ article_list_event.freezed.dart
+│ │ ├─ article_list_state.dart
+│ │ └─ article_list_state.freezed.dart
+├─ page/
+│ ├─ article_detail_page.dart
+│ └─ article_list_page.dart
 
 ---
