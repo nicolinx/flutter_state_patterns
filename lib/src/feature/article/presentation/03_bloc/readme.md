@@ -56,5 +56,6 @@ context.read<ArticleDetailBloc>().add(ArticleDetailEvent.fetchArticleById(widget
   - page/
     - article_detail_page.dart
     - article_list_page.dart
+  - bloc.dart
 
 ---

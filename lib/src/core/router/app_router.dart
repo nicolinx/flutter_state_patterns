@@ -1,12 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_state_boilerplate/src/core/di/injector.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/bloc/article_detail/article_detail_bloc.dart'
-    as bloc;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/bloc/article_list/article_list_bloc.dart'
-    as bloc;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/page/article_detail_page.dart'
-    as bloc;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/page/article_list_page.dart'
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/bloc.dart'
     as bloc;
 import 'package:go_router/go_router.dart';
 
