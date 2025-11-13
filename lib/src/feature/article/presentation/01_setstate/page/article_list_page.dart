@@ -22,7 +22,7 @@ class _ArticleListPageState extends State<ArticleListPage> {
   void initState() {
     _controller = di<ArticleListController>();
     _controller.setListener((newState) {
-      setState(() {});
+      setState(() => state = newState);
     });
     _controller.onInitialFetch();
 
@@ -32,7 +32,7 @@ class _ArticleListPageState extends State<ArticleListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Bloc: Article List Page')),
+      appBar: AppBar(title: Text('Setstate: Article List Page')),
       body: Builder(
         builder: (context) {
           if (state.isLoading && state.articles.isEmpty) {
