@@ -16,13 +16,14 @@ class ArticleListPage extends StatefulWidget {
 
 class _ArticleListPageState extends State<ArticleListPage> {
   late final ArticleListController _controller;
-  ArticleListState state = const ArticleListState();
+
+  ArticleListState get state => _controller.state;
 
   @override
   void initState() {
     _controller = di<ArticleListController>();
     _controller.setListener((newState) {
-      setState(() => state = newState);
+      setState(() {});
     });
     _controller.onInitialFetch();
 
