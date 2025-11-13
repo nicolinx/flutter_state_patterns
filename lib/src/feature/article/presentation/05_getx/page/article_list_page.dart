@@ -27,7 +27,7 @@ class _ArticleListPageState extends State<ArticleListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Provider: Article List Page')),
+      appBar: AppBar(title: Text('GetX: Article List Page')),
       body: Obx(() {
         final state = _controller.state.value;
 
@@ -52,10 +52,10 @@ class _ArticleListPageState extends State<ArticleListPage> {
             itemBuilder: (context, index) {
               if (index < state.articles.length) {
                 return ListTile(
-                  // onTap: () => context.pushNamed(
-                  //   ArticleDetailPage.routeName,
-                  //   pathParameters: {'id': state.articles[index].id.toString()},
-                  // ),
+                  onTap: () => context.pushNamed(
+                    ArticleDetailPage.routeName,
+                    pathParameters: {'id': state.articles[index].id.toString()},
+                  ),
                   title: Text(state.articles[index].title ?? '-'),
                 );
               } else {

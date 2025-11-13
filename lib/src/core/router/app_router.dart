@@ -104,16 +104,16 @@ class AppRouter {
           return getx.ArticleListPage();
         },
       ),
-      // GoRoute(
-      //   name: provider.ArticleDetailPage.routeName,
-      //   path: provider.ArticleDetailPage.routePath,
-      //   builder: (context, state) => ChangeNotifierProvider(
-      //     create: (context) => di<ArticleDetailProvider>(),
-      //     child: provider.ArticleDetailPage(
-      //       articleId: int.parse(state.pathParameters['id'].toString()),
-      //     ),
-      //   ),
-      // ),
+      GoRoute(
+        name: getx.ArticleDetailPage.routeName,
+        path: getx.ArticleDetailPage.routePath,
+        builder: (context, state) {
+          getx.ArticleDetailBinding().dependencies();
+          return getx.ArticleDetailPage(
+            articleId: int.parse(state.pathParameters['id'].toString()),
+          );
+        },
+      ),
     ],
   );
 }
