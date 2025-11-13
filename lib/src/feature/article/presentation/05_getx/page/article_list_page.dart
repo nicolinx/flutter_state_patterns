@@ -1,0 +1,73 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/05_getx/getx.dart';
+import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
+
+class ArticleListPage extends StatefulWidget {
+  static const String routeName = '/getx/article-list';
+  static const String routePath = '/getx/article-list';
+
+  const ArticleListPage({super.key});
+
+  @override
+  State<ArticleListPage> createState() => _ArticleListPageState();
+}
+
+class _ArticleListPageState extends State<ArticleListPage> {
+  late final ArticleListController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller = Get.find<ArticleListController>();
+    _controller.onInitialFetch();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Provider: Article List Page')),
+      body: Obx(() {
+        final state = _controller.state.value;
+
+        if (state.isLoading && state.articles.isEmpty) {
+          return Center(child: CircularProgressIndicator());
+        }
+
+        if (state.error != null && state.articles.isEmpty) {
+          return Center(child: Text(state.error!));
+        }
+
+        return NotificationListener<ScrollNotification>(
+          onNotification: (scrollInfo) {
+            if (scrollInfo.metrics.pixels >=
+                scrollInfo.metrics.maxScrollExtent - 200.0) {
+              _controller.onLoadMore();
+            }
+            return false;
+          },
+          child: ListView.builder(
+            itemCount: state.articles.length + (state.hasMore ? 1 : 0),
+            itemBuilder: (context, index) {
+              if (index < state.articles.length) {
+                return ListTile(
+                  // onTap: () => context.pushNamed(
+                  //   ArticleDetailPage.routeName,
+                  //   pathParameters: {'id': state.articles[index].id.toString()},
+                  // ),
+                  title: Text(state.articles[index].title ?? '-'),
+                );
+              } else {
+                return Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Center(child: CircularProgressIndicator()),
+                );
+              }
+            },
+          ),
+        );
+      }),
+    );
+  }
+}

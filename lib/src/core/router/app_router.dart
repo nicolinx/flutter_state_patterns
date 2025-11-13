@@ -11,13 +11,16 @@ import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bl
     as bloc;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/04_cubit/cubit.dart'
     as cubit;
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/05_getx/getx.dart'
+    as getx;
 
 class AppRouter {
   static GoRouter router = GoRouter(
     // initialLocation: bloc.ArticleListPage.routePath,
     // initialLocation: cubit.ArticleListPage.routePath,
     // initialLocation: setstate.ArticleListPage.routePath,
-    initialLocation: provider.ArticleListPage.routePath,
+    // initialLocation: provider.ArticleListPage.routePath,
+    initialLocation: getx.ArticleListPage.routePath,
     routes: [
       // --- 01_setstate ---
       GoRoute(
@@ -92,6 +95,25 @@ class AppRouter {
           );
         },
       ),
+      // --- 05_getx ---
+      GoRoute(
+        name: getx.ArticleListPage.routeName,
+        path: getx.ArticleListPage.routePath,
+        builder: (context, state) {
+          getx.ArticleListBinding().dependencies();
+          return getx.ArticleListPage();
+        },
+      ),
+      // GoRoute(
+      //   name: provider.ArticleDetailPage.routeName,
+      //   path: provider.ArticleDetailPage.routePath,
+      //   builder: (context, state) => ChangeNotifierProvider(
+      //     create: (context) => di<ArticleDetailProvider>(),
+      //     child: provider.ArticleDetailPage(
+      //       articleId: int.parse(state.pathParameters['id'].toString()),
+      //     ),
+      //   ),
+      // ),
     ],
   );
 }
