@@ -17,7 +17,6 @@ class ArticleDetailProvider extends ChangeNotifier {
 
   Future<void> onFetchArticleById(id) async {
     setState(const ArticleDetailState.loading());
-    notifyListeners();
     try {
       final article = await _articleRepository.getArticlesById(id);
       setState(ArticleDetailState.loaded(article));
