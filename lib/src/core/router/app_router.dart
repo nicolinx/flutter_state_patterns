@@ -148,15 +148,15 @@ class AppRouter {
           return mobx.ArticleListPage();
         },
       ),
-      // GoRoute(
-      //   name: riverpod.ArticleDetailPage.routeName,
-      //   path: riverpod.ArticleDetailPage.routePath,
-      //   builder: (context, state) {
-      //     return riverpod.ArticleDetailPage(
-      //       articleId: int.parse(state.pathParameters['id'].toString()),
-      //     );
-      //   },
-      // ),
+      GoRoute(
+        name: mobx.ArticleDetailPage.routeName,
+        path: mobx.ArticleDetailPage.routePath,
+        builder: (context, state) {
+          return mobx.ArticleDetailPage(
+            articleId: int.parse(state.pathParameters['id'].toString()),
+          );
+        },
+      ),
       // --- 09_valuenotifier ---
       GoRoute(
         name: valuenotifier.ArticleListPage.routeName,

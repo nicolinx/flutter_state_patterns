@@ -61,9 +61,7 @@ Future<void> initDI() async {
 
   // --- 07_mobx ---
   di.registerFactory(() => mobx.ArticleListStore(di<ArticleRepository>()));
-  // di.registerFactory(
-  //   () => riverpod.ArticleDetailController(di<ArticleRepository>()),
-  // );
+  di.registerFactory(() => mobx.ArticleDetailStore(di<ArticleRepository>()));
 
   // --- 09_valuenotifier ---
   di.registerFactory(

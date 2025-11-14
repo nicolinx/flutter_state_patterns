@@ -54,12 +54,12 @@ class _ArticleListPageState extends State<ArticleListPage> {
               itemBuilder: (context, index) {
                 if (index < state.articles.length) {
                   return ListTile(
-                    // onTap: () => context.pushNamed(
-                    //   ArticleDetailPage.routeName,
-                    //   pathParameters: {
-                    //     'id': state.articles[index].id.toString(),
-                    //   },
-                    // ),
+                    onTap: () => context.pushNamed(
+                      ArticleDetailPage.routeName,
+                      pathParameters: {
+                        'id': state.articles[index].id.toString(),
+                      },
+                    ),
                     title: Text(state.articles[index].title ?? '-'),
                   );
                 } else {
