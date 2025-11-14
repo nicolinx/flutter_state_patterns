@@ -123,6 +123,6 @@ final articleListProvider =
   - state/
     - article_detail_state.dart
     - article_list_state.dart
-  - getx.dart
+  - riverpod.dart
 
 ---
