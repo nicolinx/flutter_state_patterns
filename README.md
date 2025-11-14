@@ -1,6 +1,6 @@
 # Flutter State Management Boilerplate
 
-A Flutter boilerplate demonstrating **all common state management approaches**:  
+A Flutter boilerplate demonstrating **most common state management approaches**:  
 `setState`, `Provider`, `Riverpod`, `BLoC`, `GetX`, `MobX`, and more. Perfect for learning, comparing, and building scalable apps.
 
 ## 📁 State Management Implementations
