@@ -10,6 +10,8 @@ import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bl
     as bloc;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/04_cubit/cubit.dart'
     as cubit;
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/06_riverpod/riverpod.dart'
+    as riverpod;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart'
     as valuenotifier;
 
@@ -46,6 +48,14 @@ Future<void> initDI() async {
   // --- 04_cubit ---
   di.registerFactory(() => cubit.ArticleListCubit(di<ArticleRepository>()));
   di.registerFactory(() => cubit.ArticleDetailCubit(di<ArticleRepository>()));
+
+  // --- 06_riverpod ---
+  di.registerFactory(
+    () => riverpod.ArticleListController(di<ArticleRepository>()),
+  );
+  di.registerFactory(
+    () => riverpod.ArticleDetailController(di<ArticleRepository>()),
+  );
 
   // --- 09_valuenotifier ---
   di.registerFactory(

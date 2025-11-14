@@ -13,6 +13,8 @@ import 'package:flutter_state_boilerplate/src/feature/article/presentation/04_cu
     as cubit;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/05_getx/getx.dart'
     as getx;
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/06_riverpod/riverpod.dart'
+    as riverpod;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart'
     as valuenotifier;
 
@@ -23,7 +25,8 @@ class AppRouter {
     // initialLocation: setstate.ArticleListPage.routePath,
     // initialLocation: provider.ArticleListPage.routePath,
     // initialLocation: getx.ArticleListPage.routePath,
-    initialLocation: valuenotifier.ArticleListPage.routePath,
+    // initialLocation: valuenotifier.ArticleListPage.routePath,
+    initialLocation: riverpod.ArticleListPage.routePath,
     routes: [
       // --- 01_setstate ---
       GoRoute(
@@ -113,6 +116,23 @@ class AppRouter {
         builder: (context, state) {
           getx.ArticleDetailBinding().dependencies();
           return getx.ArticleDetailPage(
+            articleId: int.parse(state.pathParameters['id'].toString()),
+          );
+        },
+      ),
+      // --- 06_riverpod ---
+      GoRoute(
+        name: riverpod.ArticleListPage.routeName,
+        path: riverpod.ArticleListPage.routePath,
+        builder: (context, state) {
+          return riverpod.ArticleListPage();
+        },
+      ),
+      GoRoute(
+        name: riverpod.ArticleDetailPage.routeName,
+        path: riverpod.ArticleDetailPage.routePath,
+        builder: (context, state) {
+          return riverpod.ArticleDetailPage(
             articleId: int.parse(state.pathParameters['id'].toString()),
           );
         },
