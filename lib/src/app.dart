@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_state_boilerplate/src/core/router/app_router.dart';
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart';
+import 'package:redux/redux.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  final Store<AppState> store;
+
+  const App({super.key, required this.store});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(routerConfig: AppRouter.router);
+    return StoreProvider(
+      store: store,
+      child: MaterialApp.router(routerConfig: AppRouter.router),
+    );
   }
 }

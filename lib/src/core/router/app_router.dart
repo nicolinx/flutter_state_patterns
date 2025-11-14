@@ -17,6 +17,8 @@ import 'package:flutter_state_boilerplate/src/feature/article/presentation/06_ri
     as riverpod;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/07_mobx/mobx.dart'
     as mobx;
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart'
+    as redux;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart'
     as valuenotifier;
 
@@ -29,7 +31,8 @@ class AppRouter {
     // initialLocation: getx.ArticleListPage.routePath,
     // initialLocation: valuenotifier.ArticleListPage.routePath,
     // initialLocation: riverpod.ArticleListPage.routePath,
-    initialLocation: mobx.ArticleListPage.routePath,
+    // initialLocation: mobx.ArticleListPage.routePath,
+    initialLocation: redux.ArticleListPage.routePath,
     routes: [
       // --- 01_setstate ---
       GoRoute(
@@ -155,6 +158,14 @@ class AppRouter {
           return mobx.ArticleDetailPage(
             articleId: int.parse(state.pathParameters['id'].toString()),
           );
+        },
+      ),
+      // --- 08_redux ---
+      GoRoute(
+        name: redux.ArticleListPage.routeName,
+        path: redux.ArticleListPage.routePath,
+        builder: (context, state) {
+          return redux.ArticleListPage();
         },
       ),
       // --- 09_valuenotifier ---

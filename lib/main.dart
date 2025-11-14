@@ -2,11 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_state_boilerplate/src/app.dart';
 import 'package:flutter_state_boilerplate/src/core/di/injector.dart';
+import 'package:redux/redux.dart';
+
+import 'src/feature/article/presentation/08_redux/redux.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await initDI();
 
-  runApp(ProviderScope(child: const App()));
+  // for redux
+  final store = Store<AppState>(
+    appReducer,
+    initialState: AppState.initial(),
+    middleware: createMiddlewares(),
+  );
+
+  runApp(ProviderScope(child: App(store: store)));
 }

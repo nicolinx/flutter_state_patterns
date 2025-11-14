@@ -31,8 +31,6 @@ Middleware<AppState> _fetchArticles(ArticleRepository repo) {
 
 Middleware<AppState> _loadMore(ArticleRepository repo) {
   return (store, action, next) async {
-    next(action);
-
     final state = store.state.articleListState;
     if (!state.hasMore || state.isLoadingMore) return;
 
@@ -40,6 +38,8 @@ Middleware<AppState> _loadMore(ArticleRepository repo) {
 
     try {
       final response = await repo.getArticles(nextPage, 20);
+
+      next(action);
 
       store.dispatch(
         LoadMoreArticlesSuccessAction(
