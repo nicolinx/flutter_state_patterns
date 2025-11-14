@@ -15,6 +15,8 @@ import 'package:flutter_state_boilerplate/src/feature/article/presentation/05_ge
     as getx;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/06_riverpod/riverpod.dart'
     as riverpod;
+import 'package:flutter_state_boilerplate/src/feature/article/presentation/07_mobx/mobx.dart'
+    as mobx;
 import 'package:flutter_state_boilerplate/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart'
     as valuenotifier;
 
@@ -26,7 +28,8 @@ class AppRouter {
     // initialLocation: provider.ArticleListPage.routePath,
     // initialLocation: getx.ArticleListPage.routePath,
     // initialLocation: valuenotifier.ArticleListPage.routePath,
-    initialLocation: riverpod.ArticleListPage.routePath,
+    // initialLocation: riverpod.ArticleListPage.routePath,
+    initialLocation: mobx.ArticleListPage.routePath,
     routes: [
       // --- 01_setstate ---
       GoRoute(
@@ -137,6 +140,23 @@ class AppRouter {
           );
         },
       ),
+      // --- 07_mobx ---
+      GoRoute(
+        name: mobx.ArticleListPage.routeName,
+        path: mobx.ArticleListPage.routePath,
+        builder: (context, state) {
+          return mobx.ArticleListPage();
+        },
+      ),
+      // GoRoute(
+      //   name: riverpod.ArticleDetailPage.routeName,
+      //   path: riverpod.ArticleDetailPage.routePath,
+      //   builder: (context, state) {
+      //     return riverpod.ArticleDetailPage(
+      //       articleId: int.parse(state.pathParameters['id'].toString()),
+      //     );
+      //   },
+      // ),
       // --- 09_valuenotifier ---
       GoRoute(
         name: valuenotifier.ArticleListPage.routeName,
