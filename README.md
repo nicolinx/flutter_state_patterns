@@ -97,7 +97,38 @@ Every state management example implements the **same exact feature**, allowing a
    https://github.com/nicolin29/mock-api-nodejs
    <br>
 
-4. **Run the app**
+4. **Code Generation (Freezed, JSON, MobX)**
+
+   This project uses code generation for:
+
+   - `freezed` (data classes & union states)
+   - `json_serializable` (model serialization)
+   - `mobx_codegen` (MobX stores)
+     <br/>
+
+   Run this command whenever you update models or generated files:
+
+   ```bash
+   flutter pub run build_runner build --delete-conflicting-outputs
+   ```
+
+   For continuous watching during development:
+
+   ```bash
+   dart run build_runner watch --delete-conflicting-outputs
+   ```
+
+   Make sure you have the required dev_dependencies installed:
+
+   ```yaml
+   dev_dependencies:
+   build_runner: ^2.10.2
+   freezed: ^3.2.3
+   json_serializable: ^6.11.1
+   mobx_codegen: ^2.7.4
+   ```
+
+5. **Run the app**
    ```bash
    flutter run
    ```
