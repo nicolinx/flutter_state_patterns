@@ -128,6 +128,6 @@ This project is licensed under the **MIT License**.
 **Nicodemus Lin**  
 Full-Stack & Mobile Engineer — From Idea to Scalable Product
 
-[![GitHub](https://img.shields.io/badge/GitHub-nicolin29-000?logo=github)](https://github.com/nicolin29)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Nicodemus_Lin-0A66C2?logo=linkedin)](https://www.linkedin.com/in/nicodemus-lin/)
-[![Email](https://img.shields.io/badge/Email-nicolin.work%40gmail.com-D14836?logo=gmail)](mailto:nicolin.work@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-nicolin29-3d3d3d?logo=github&logoColor=white)](https://github.com/nicolin29)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Nicodemus_Lin-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicodemus-lin/)
+[![Email](https://img.shields.io/badge/Email-nicolin.work%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:nicolin.work@gmail.com)
