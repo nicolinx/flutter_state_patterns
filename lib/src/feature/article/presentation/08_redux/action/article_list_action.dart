@@ -1,5 +1,5 @@
 // INITIAL FETCH
-import 'package:flutter_state_boilerplate/src/feature/article/data/model/article.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/model/article.dart';
 
 class FetchArticlesAction {}
 

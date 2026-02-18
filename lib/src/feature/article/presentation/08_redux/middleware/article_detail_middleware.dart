@@ -1,8 +1,8 @@
 // ignore_for_file: implicit_call_tearoffs
 
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/08_redux/redux.dart';
 import 'package:redux/redux.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
 
 class ArticleDetailMiddleware {
   final ArticleRepository _articleRepository;

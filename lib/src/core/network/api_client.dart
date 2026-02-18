@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_state_boilerplate/src/core/config/app_config.dart';
+import 'package:flutter_state_patterns/src/core/config/app_config.dart';
 
 class ApiClient {
   final Dio _client;

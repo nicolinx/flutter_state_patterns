@@ -1,4 +1,4 @@
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/08_redux/redux.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'app_state.freezed.dart';

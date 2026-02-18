@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart';
 
 class ArticleListController {
   final ArticleRepository _articleRepository;

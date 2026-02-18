@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/04_cubit/cubit.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/04_cubit/cubit.dart';
 
 class ArticleDetailPage extends StatefulWidget {
   static const String routeName = '/cubit/article-detail';

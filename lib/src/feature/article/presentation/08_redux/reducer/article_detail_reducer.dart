@@ -1,5 +1,5 @@
 import 'package:redux/redux.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/08_redux/redux.dart';
 
 class ArticleDetailReducer {
   static final Reducer<ArticleDetailState> reducer =

@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/02_provider/provider.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/02_provider/provider.dart';
 
 class ArticleListProvider extends ChangeNotifier {
   ArticleListState _state = const ArticleListState();

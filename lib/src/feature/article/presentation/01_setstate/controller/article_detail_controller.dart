@@ -1,5 +1,5 @@
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/01_setstate/setstate.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/01_setstate/setstate.dart';
 
 class ArticleDetailController {
   ArticleDetailState state = const ArticleDetailState.initial();

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/05_getx/getx.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/05_getx/getx.dart';
 import 'package:get/get.dart';
 
 class ArticleDetailPage extends StatefulWidget {

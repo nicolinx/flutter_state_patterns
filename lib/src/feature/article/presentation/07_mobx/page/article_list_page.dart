@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_state_boilerplate/src/core/di/injector.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/07_mobx/mobx.dart';
+import 'package:flutter_state_patterns/src/core/di/injector.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/07_mobx/mobx.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 

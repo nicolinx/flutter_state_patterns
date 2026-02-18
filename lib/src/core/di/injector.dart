@@ -1,22 +1,22 @@
 import 'package:get_it/get_it.dart';
-import 'package:flutter_state_boilerplate/src/core/network/api_client.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/service/article_service.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/01_setstate/setstate.dart'
+import 'package:flutter_state_patterns/src/core/network/api_client.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/service/article_service.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/01_setstate/setstate.dart'
     as setstate;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/02_provider/provider.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/02_provider/provider.dart'
     as provider;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/bloc.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/03_bloc/bloc.dart'
     as bloc;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/04_cubit/cubit.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/04_cubit/cubit.dart'
     as cubit;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/06_riverpod/riverpod.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/06_riverpod/riverpod.dart'
     as riverpod;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/07_mobx/mobx.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/07_mobx/mobx.dart'
     as mobx;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/08_redux/redux.dart'
     as redux;
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart'
+import 'package:flutter_state_patterns/src/feature/article/presentation/09_valuenotifier/valuenotifier.dart'
     as valuenotifier;
 
 final di = GetIt.instance;

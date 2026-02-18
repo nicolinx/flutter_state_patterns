@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/08_redux/redux.dart';
 
 class ArticleDetailPage extends StatefulWidget {
   static const String routeName = '/redux/article-detail';

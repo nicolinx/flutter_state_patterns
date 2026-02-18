@@ -1,4 +1,4 @@
-package com.example.flutter_state_boilerplate
+package dev.nicolin.flutter_state_patterns
 
 import io.flutter.embedding.android.FlutterActivity
 

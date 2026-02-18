@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/06_riverpod/riverpod.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/06_riverpod/riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 class ArticleListPage extends ConsumerStatefulWidget {

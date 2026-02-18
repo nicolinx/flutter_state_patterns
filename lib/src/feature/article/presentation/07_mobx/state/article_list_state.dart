@@ -1,4 +1,4 @@
-import 'package:flutter_state_boilerplate/src/feature/article/data/model/article.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/model/article.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'article_list_state.freezed.dart';

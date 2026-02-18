@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/03_bloc/bloc.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/03_bloc/bloc.dart';
 
 class ArticleListBloc extends Bloc<ArticleListEvent, ArticleListState> {
   final ArticleRepository _articleRepository;

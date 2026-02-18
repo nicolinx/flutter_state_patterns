@@ -1,5 +1,5 @@
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/05_getx/getx.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/05_getx/getx.dart';
 import 'package:get/get.dart';
 
 class ArticleListController extends GetxController {

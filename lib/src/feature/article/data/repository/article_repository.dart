@@ -1,6 +1,6 @@
-import 'package:flutter_state_boilerplate/src/feature/article/data/model/article.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/model/article_list_response.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/data/service/article_service.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/model/article.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/model/article_list_response.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/service/article_service.dart';
 
 class ArticleRepository {
   final ArticleService _articleService;

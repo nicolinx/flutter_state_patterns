@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/02_provider/provider.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/02_provider/provider.dart';
 import 'package:provider/provider.dart';
 
 class ArticleDetailPage extends StatefulWidget {

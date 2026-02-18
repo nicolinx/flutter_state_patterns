@@ -1,5 +1,5 @@
-import 'package:flutter_state_boilerplate/src/core/di/injector.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/08_redux/redux.dart';
+import 'package:flutter_state_patterns/src/core/di/injector.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/08_redux/redux.dart';
 import 'package:redux/redux.dart';
 
 List<Middleware<AppState>> createMiddlewares() {

@@ -1,5 +1,5 @@
-import 'package:flutter_state_boilerplate/src/feature/article/data/repository/article_repository.dart';
-import 'package:flutter_state_boilerplate/src/feature/article/presentation/07_mobx/mobx.dart';
+import 'package:flutter_state_patterns/src/feature/article/data/repository/article_repository.dart';
+import 'package:flutter_state_patterns/src/feature/article/presentation/07_mobx/mobx.dart';
 import 'package:mobx/mobx.dart';
 
 part 'article_list_store.g.dart';
